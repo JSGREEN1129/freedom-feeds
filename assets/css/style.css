@@ -1,0 +1,7 @@
+/* body { background-color:blue;
+background-image: url("../images/sincerely-media-EtyBBUByPSQ-unsplash.jpg") ;
+} */
+
+body { background-color:blue;
+    background-image: url("/assets/images/sincerely-media-EtyBBUByPSQ-unsplash.jpg") ;
+    }
