@@ -1,7 +1,75 @@
-/* body { background-color:blue;
-background-image: url("../images/sincerely-media-EtyBBUByPSQ-unsplash.jpg") ;
-} */
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Sets the font for to 'Poppins', using sans-serif as fall back font */
+    margin: 0; /* Remove preset margin around the body */
+    padding: 0; /* Remove preset padding around the body */
+    background-color: #FFFFFF; /* Set the background for the body as white */
+}
 
-body { background-color:blue;
-    background-image: url("/assets/images/sincerely-media-EtyBBUByPSQ-unsplash.jpg") ;
-    }
+/* Header Section */
+header {
+    background-color: #000000; /* Set the background color of the header to black */
+    color: #FFFFFF; /* Ses the header text to white */
+    padding: 15px 20px; /* Add padding to the header, top and bottom, left and right respectively */
+    display: flex; /* Applie Flexbox layout to the header */
+    justify-content: space-between; /* Apply space evenly between the left and right elements within the header */
+    align-items: center; /* Vertically align items in the center of the header */
+    border-bottom: 2px solid #B22222; /* Adds a Red border at the bottom of the header */
+}
+
+    .header-left, .header-right {
+      display: flex; /* Flexbox layout for the left and right sections */
+      align-items: center; /* vertically center the items inside the sections */
+  }
+  
+  .poppy-icon {
+      width: 40px; /* Set the width of the poppy icon */
+      height: auto; /* Adjust the height of the poppy icon based on the width */
+      margin-right: 15px; /* Add margin to the right of the icon, use to ensure consistant positioning */
+      margin-left: 15px; /* Add margin to the left of the icon, use to ensure consistant positioning */
+  }
+
+/* Navigation Styles */
+nav {
+    display: flex; /* Flexbox to lay out the the navigation items */
+    justify-content: center; /* Align the navigation items horizontally in the center of the nav container */
+}
+
+nav ul {
+    list-style: none; /* Remove the default list for unordered lists */
+    margin: 0; /* Remove the default margin for unordered lists */
+    padding: 0; /* Remove the default padding for unordered lists */
+    display: flex; /* Use Flexbox for the list items inside the unordered list of navigation items */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color to white */
+    font-size: 18px; /* Font size */
+    font-weight: 600; /* Semi-bold font weight */
+    position: relative; /* Positions pseudo-element relative to the link */
+    padding: 10px 25px; /* Adds padding inside the links */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Hide the underline until hover */
+    bottom: -5px; /* position pf the underline pseudo-element on hover */
+    left: 0; /* Ensure the underine pseudo-element on hover is positioned correctly and starts at the left of the anchor tag */
+    right: 0; /* Ensure the underine pseudo-element on hover is positioned correctly and starts at the right of the anchor tag */
+    height: 2px; /* Set the underline thickness */
+    background-color: red; /* Set Red as the color of the underline pseudo-element on hover */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expands the underline pseudo-element to the full width on hover */
+}
+
+
+  
