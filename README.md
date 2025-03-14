@@ -31,13 +31,13 @@ This can be in the form of donating food, everyday essentials and technology gra
 
 **Impact to date section**: A section sharing what the charity has achieved so far with its received donations.
 
-# **Donations details page**
+# Donations details page
 **Donations page**: Details on the donations that Freedom-feeds are requesting and how those will be put to use.
 
-# **Contact details page**
+# Contact details page
 **Contact details page**: Deatails for memebers of the public or corporate clients how to contact the charity and offer their support.
 
-# **Donate button**
+# Donate button
 A purpose built CTA button which can be positioned throughout the website to guide visitors to the donations page.
 
 
