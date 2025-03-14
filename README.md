@@ -1,7 +1,7 @@
 ﻿# freedom-feeds
 The project is to develop a static and basic web application to promote a charity called **Freedom-feeds**. 
 
-## Table of Contents
+# Table of Contents
 1. [About](#about)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
@@ -13,14 +13,14 @@ The project is to develop a static and basic web application to promote a charit
 
 ---
 
-## Built with
+# Built with
 **HMTL**
 
 **CSS**
 
 ---
 
-## About
+# About
 The charity engages in fundraising activites to help support war veterans and their families, when they suffer hardship due to military deployment.
 
 This can be in the form of donating food, everyday essentials and technology grants.
@@ -39,7 +39,7 @@ This can be in the form of donating food, everyday essentials and technology gra
 ## Donations details page
 **Donations page**: Details on the donations that Freedom-feeds are requesting and how those will be put to use.
 
-# Contact details page
+## Contact details page
 **Contact details page**: Deatails for memebers of the public or corporate clients how to contact the charity and offer their support.
 
 ## Donate button
