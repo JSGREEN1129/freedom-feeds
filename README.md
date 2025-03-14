@@ -14,6 +14,10 @@ The project is to develop a static and basic web application to promote a charit
 ---
 
 ## Built with
+**HMTL**
+**CSS**
+
+---
 
 ## About
 The charity engages in fundraising activites to help support war veterans and their families, when they suffer hardship due to military deployment.
