@@ -24,7 +24,9 @@ This can be in the form of donating food, everyday essentials and technology gra
 
 # **Chairty Information page**: Information about the charity.
 **Our mission section**: A section detailing what Freedom-feeds activities are and why they do what they do.
+
 **Sophies story section**: A personalised story form the wife of a war veteran whos husband suffered extreme mental health difficulties when returning from deployment.
+
 **Impact to date section**: A section sharing what the charity has achieved so far with its received donations.
 
 # **Donations details page**
