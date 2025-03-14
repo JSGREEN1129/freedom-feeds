@@ -73,7 +73,7 @@ nav ul li a:hover::after {
 
 /* Hero Section */
 .hero {
-    background: url("jamie-street-BGB9Eidt30I-unsplash.jpg") no-repeat center center/cover;
+    background: url("assets/images/freedom-feeds-homepage-hero-background.jpg") no-repeat center center/cover; /* Adds a background image, I used assistance to help me add this image with a dark semi-transparent overlay*/
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@ nav ul li a:hover::after {
     text-align: center;
   }
   
-  .hero::after {
+  .hero::after {   /* Adds a background image, I used assistance to help me add this image with a dark semi-transparent overlay*/
     content: '';
     position: absolute;
     top: 0;
