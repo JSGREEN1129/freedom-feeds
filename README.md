@@ -34,6 +34,6 @@ This can be in the form of donating food, everyday essentials and technology gra
 **Contact details page**: Deatails for memebers of the public or corporate clients how to contact the charity and offer their support.
 
 # **Donate button**
-**A purpose built CTA button which can be positioned throughout the website to guide visitors to the donations page.
+A purpose built CTA button which can be positioned throughout the website to guide visitors to the donations page.
 
 
