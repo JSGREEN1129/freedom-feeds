@@ -13,6 +13,8 @@ The project is to develop a static and basic web application to promote a charit
 
 ---
 
+## Built with
+
 ## About
 The charity engages in fundraising activites to help support war veterans and their families, when they suffer hardship due to military deployment.
 
@@ -22,7 +24,7 @@ This can be in the form of donating food, everyday essentials and technology gra
 
 ## Features
 
-# **Chairty Information page**: Information about the charity.
+# Chairty Information page: Information about the charity.
 **Our mission section**: A section detailing what Freedom-feeds activities are and why they do what they do.
 
 **Sophies story section**: A personalised story form the wife of a war veteran whos husband suffered extreme mental health difficulties when returning from deployment.
