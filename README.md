@@ -2,14 +2,9 @@
 The project is to develop a static and basic web application to promote a charity called **Freedom-feeds**. 
 
 # Table of Contents
-1. [About](#about)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Acknowledgements](#acknowledgements)
+1. [Built with](*Builtwith)
+2. [About](#about)
+3. [Features](#features)
 
 ---
 
