@@ -1,293 +1,293 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Sets the font for to 'Poppins', using sans-serif as fall back font */
-    margin: 0; /* Remove preset margin around the body */
-    padding: 0; /* Remove preset padding around the body */
-    background-color: #FFFFFF; /* Set the background for the body as white */
+  font-family: 'Poppins', sans-serif; /* Font for body, with sans-serif fallback */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #FFFFFF; /* White background */
 }
 
 /* Header Section */
 header {
-    background-color: #000000; /* Set the background color of the header to black */
-    color: #FFFFFF; /* Ses the header text to white */
-    padding: 15px 20px; /* Add padding to the header, top and bottom, left and right respectively */
-    display: flex; /* Applie Flexbox layout to the header */
-    justify-content: space-between; /* Apply space evenly between the left and right elements within the header */
-    align-items: center; /* Vertically align items in the center of the header */
-    border-bottom: 2px solid #B22222; /* Adds a Red border at the bottom of the header */
+  background-color: #000000; /* Black background for the header */
+  color: #FFFFFF; /* White text */
+  padding: 15px 20px; /* Padding for header */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space out the content */
+  align-items: center; /* Center items vertically */
+  border-bottom: 4px solid #B22222; /* Red bottom border */
 }
 
-    .header-left, .header-right {
-      display: flex; /* Flexbox layout for the left and right sections */
-      align-items: center; /* vertically center the items inside the sections */
-  }
-  
-  .poppy-icon {
-      width: 40px; /* Set the width of the poppy icon */
-      height: auto; /* Adjust the height of the poppy icon based on the width */
-      margin-right: 15px; /* Add margin to the right of the icon, use to ensure consistant positioning */
-      margin-left: 15px; /* Add margin to the left of the icon, use to ensure consistant positioning */
-  }
+.header-left, .header-right {
+  display: flex; /* Flex layout for left and right sections */
+  align-items: center; /* Vertically center the items */
+}
+
+.poppy-icon {
+  width: 40px; /* Icon width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 15px; /* Horizontal spacing for the icon */
+}
 
 /* Navigation Styles */
 nav {
-    display: flex; /* Flexbox to lay out the the navigation items */
-    justify-content: center; /* Align the navigation items horizontally in the center of the nav container */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center nav items */
 }
 
 nav ul {
-    list-style: none; /* Remove the default list for unordered lists */
-    margin: 0; /* Remove the default margin for unordered lists */
-    padding: 0; /* Remove the default padding for unordered lists */
-    display: flex; /* Use Flexbox for the list items inside the unordered list of navigation items */
+  list-style: none; /* Remove default list style */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  display: flex; /* Flex layout for list items */
 }
 
 nav ul li {
-    margin-right: 20px; /* Space between links */
+  margin-right: 20px; /* Space between links */
 }
 
 nav ul li a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* Sets text color to white */
-    font-size: 18px; /* Font size */
-    font-weight: 600; /* Semi-bold font weight */
-    position: relative; /* Positions pseudo-element relative to the link */
-    padding: 10px 25px; /* Adds padding inside the links */
+  text-decoration: none; /* No underline */
+  color: #FFFFFF; /* White text */
+  font-size: 18px; /* Font size */
+  font-weight: 600; /* Semi-bold */
+  position: relative; /* For pseudo-element positioning */
+  padding: 10px 25px; /* Padding for the links */
 }
 
 nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0; /* Hide the underline until hover */
-    bottom: -5px; /* position pf the underline pseudo-element on hover */
-    left: 0; /* Ensure the underine pseudo-element on hover is positioned correctly and starts at the left of the anchor tag */
-    right: 0; /* Ensure the underine pseudo-element on hover is positioned correctly and starts at the right of the anchor tag */
-    height: 2px; /* Set the underline thickness */
-    background-color: red; /* Set Red as the color of the underline pseudo-element on hover */
-    transition: width 0.3s ease; /* Smooth width transition */
+  content: '';
+  position: absolute;
+  width: 0; /* Start hidden */
+  bottom: -5px; /* Place under the text */
+  left: 0; /* Align to left of the link */
+  right: 0; /* Align to right of the link */
+  height: 2px; /* Underline thickness */
+  background-color: #B22222; /* Red underline */
+  transition: width 0.3s ease; /* Smooth transition for the underline */
 }
 
 nav ul li a:hover::after {
-    width: 100%; /* Expands the underline pseudo-element to the full width on hover */
+  width: 100%; /* Expand underline on hover */
 }
 
 .hero {
-  height: 80vh;  /* Hero section height */
-  display: flex;  /* Flex layout */
-  justify-content: center;  /* Center content horizontally */
-  align-items: center;  /* Center content vertically */
-  position: relative;  /* Needed for overlay positioning */
-  color: #FFFFFF;  /* White text */
-  text-align: center;  /* Center text */
-  border-bottom: 4px solid #B22222;  /* Red bottom border */
+height: 80vh;  /* Hero section height */
+display: flex;  /* Flex layout */
+justify-content: center;  /* Center content horizontally */
+align-items: center;  /* Center content vertically */
+position: relative;  /* Needed for overlay positioning */
+color: #FFFFFF;  /* White text */
+text-align: center;  /* Center text */
+border-bottom: 4px solid #B22222;  /* Red bottom border */
 }
 
 .hero::after {
-  content: '';  /* Pseudo-element for overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);  /* Semi-transparent black overlay */
+content: '';  /* Pseudo-element for overlay */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);  /* Semi-transparent black overlay */
 }
 
 .hero-content {
-  position: relative;  /* Ensure content is on top of overlay */
-  z-index: 1;  /* Make sure it's above the overlay */
-  padding: 20px;  /* Padding around the content */
+position: relative;  /* Ensure content is on top of overlay */
+z-index: 1;  /* Make sure it's above the overlay */
+padding: 20px;  /* Padding around the content */
 }
 
 .hero h1 {
-  font-size: 60px;  /* Large font size for the title */
-  margin-bottom: 5px;  /* Space below the title */
-  text-decoration-color: #B22222;  /* Red underline color */
-  text-decoration-thickness: 4px;  /* Thick underline */
+font-size: 60px;  /* Large font size for the title */
+margin-bottom: 5px;  /* Space below the title */
+text-decoration-color: #B22222;  /* Red underline color */
+text-decoration-thickness: 4px;  /* Thick underline */
 }
 
 .hero #p1 {
-  font-size: 30px;  /* Medium size for the first paragraph */
-  margin: 0 0 30px 0;  /* Top margin removed, bottom space added */
+font-size: 30px;  /* Medium size for the first paragraph */
+margin: 0 0 30px 0;  /* Top margin removed, bottom space added */
 }
 
 .hero #p2 {
-  font-size: 20px;  /* Smaller font for the second paragraph */
-  margin-bottom: 30px;  /* Bottom margin for spacing */
+font-size: 20px;  /* Smaller font for the second paragraph */
+margin-bottom: 30px;  /* Bottom margin for spacing */
 }
 
 .cta-button {
-  background-color: #B22222;  /* Red background */
-  color: #FFFFFF;  /* White text */
-  padding: 12px 30px;  /* Padding inside button */
-  text-decoration: none;  /* No underline */
-  border-radius: 30px;  /* Rounded corners */
-  border: 2px solid #FFFFFF;  /* White border */
-  font-size: 18px;  /* Font size */
-  font-weight: bold;  /* Bold text */
-  transition: all 0.3s;  /* Smooth hover transition */
+background-color: #B22222;  /* Red background */
+color: #FFFFFF;  /* White text */
+padding: 12px 30px;  /* Padding inside button */
+text-decoration: none;  /* No underline */
+border-radius: 30px;  /* Rounded corners */
+border: 2px solid #FFFFFF;  /* White border */
+font-size: 18px;  /* Font size */
+font-weight: bold;  /* Bold text */
+transition: all 0.3s;  /* Smooth hover transition */
 }
 
 .cta-button:hover {
-  background-color: #FFFFFF;  /* White background on hover */
-  border-color: #B22222;  /* Red border on hover */
-  color: #B22222;  /* Red text on hover */
+background-color: #FFFFFF;  /* White background on hover */
+border-color: #B22222;  /* Red border on hover */
+color: #B22222;  /* Red text on hover */
 }
 
 /* Mission Section */
 .mission-container, .impact-container {
-  display: flex;  /* Flexbox layout */
-  justify-content: space-between;  /* Space out content */
-  align-items: center;  /* Center items vertically */
-  padding: 40px 20px;  /* Section padding */
-  background-color: #FFFFFF;  /* White background */
-  color: #333;  /* Dark text */
-  flex-wrap: wrap;  /* Wrap content if necessary */
-  border-bottom: 4px solid #B22222;  /* Red bottom border */
+display: flex;  /* Flexbox layout */
+justify-content: space-between;  /* Space out content */
+align-items: center;  /* Center items vertically */
+padding: 40px 20px;  /* Section padding */
+background-color: #FFFFFF;  /* White background */
+color: #333;  /* Dark text */
+flex-wrap: wrap;  /* Wrap content if necessary */
+border-bottom: 4px solid #B22222;  /* Red bottom border */
 }
 
 .mission-content, .impact-content {
-  display: flex;
-  width: 100%;  /* Ensure content takes full width */
-  flex-wrap: wrap;  /* Allow wrapping of content */
-  justify-content: space-between;  /* Space content across */
+display: flex;
+width: 100%;  /* Ensure content takes full width */
+flex-wrap: wrap;  /* Allow wrapping of content */
+justify-content: space-between;  /* Space content across */
 }
 
 .mission-image  {
-  flex: 1;  /* Flex layout, equal space */
-  max-width: 50%;  /* Max width 50% */
-  padding-right: 50px;  /* Padding on the right for image */
+flex: 1;  /* Flex layout, equal space */
+max-width: 50%;  /* Max width 50% */
+padding-right: 50px;  /* Padding on the right for image */
 }
 
 .impact-image {
-  flex: 1;  /* Flex layout, equal space */
-  max-width: 50%;  /* Max width 50% */
-  padding-left: 50px;  /* Padding on the right for image */
+flex: 1;  /* Flex layout, equal space */
+max-width: 50%;  /* Max width 50% */
+padding-left: 50px;  /* Padding on the right for image */
 }
 
 .mission-image img, .impact-image img {
-  width: 100%;  /* Scale images to fill container */
-  height: auto;  /* Maintain aspect ratio */
-  border-radius: 10px;  /* Rounded corners */
-  border: 4px solid #B22222;  /* Red border around the images */
+width: 100%;  /* Scale images to fill container */
+height: auto;  /* Maintain aspect ratio */
+border-radius: 10px;  /* Rounded corners */
+border: 4px solid #B22222;  /* Red border around the images */
 }
 
 .mission-text, .impact-text {
-  flex: 1;  /* Flex layout, equal space */
-  max-width: 50%;  /* Max width 50% */
-  padding-left: 30px;  /* Padding on the left for text */
-  text-align: left;  /* Left align text */
+flex: 1;  /* Flex layout, equal space */
+max-width: 50%;  /* Max width 50% */
+padding-left: 30px;  /* Padding on the left for text */
+text-align: left;  /* Left align text */
 }
 
 .mission-text h2, .impact-text h2 {
-  font-size: 44px;  /* Large heading size */
-  margin-bottom: 20px;  /* Margin below the heading */
-  color: #B22222;  /* Red color */
-  text-decoration: underline;  /* Underline */
-  text-decoration-thickness: 4px;  /* Thick underline */
+font-size: 44px;  /* Large heading size */
+margin-bottom: 20px;  /* Margin below the heading */
+color: #B22222;  /* Red color */
+text-decoration: underline;  /* Underline */
+text-decoration-thickness: 4px;  /* Thick underline */
 }
 
 .mission-text p, .impact-text p {
-  font-size: 18px;  /* Regular text size */
-  margin-bottom: 30px;  /* Bottom margin for spacing */
+font-size: 18px;  /* Regular text size */
+margin-bottom: 30px;  /* Bottom margin for spacing */
 }
 
 
 /* Sophie's Story Section */
 .sophies-story {
-  display: flex;  /* Flexbox layout for easy alignment */
-  align-items: center;  /* Vertically center content */
-  justify-content: center;  /* Horizontally center content */
-  padding: 100px 20px;  /* Padding around the section */
-  color: #FFFFFF;  /* White text color */
-  text-align: center;  /* Center text horizontally */
-  height: 60vh;  /* Height set to 60% of the viewport */
-  position: relative;  /* Needed for positioning child elements */
-  border-bottom: 4px solid #B22222;  /* Red bottom border */
+display: flex;  /* Flexbox layout for easy alignment */
+align-items: center;  /* Vertically center content */
+justify-content: center;  /* Horizontally center content */
+padding: 100px 20px;  /* Padding around the section */
+color: #FFFFFF;  /* White text color */
+text-align: center;  /* Center text horizontally */
+height: 60vh;  /* Height set to 60% of the viewport */
+position: relative;  /* Needed for positioning child elements */
+border-bottom: 4px solid #B22222;  /* Red bottom border */
 }
 
 .sophies-image-container {
-  position: absolute;  /* Absolute positioning to place image behind text */
-  top: 0;  /* Align image container to the top */
-  left: 0;  /* Align image container to the left */
-  width: 100%;  /* Full width of the parent container */
-  height: 100%;  /* Full height of the parent container */
-  z-index: -1;  /* Make sure the image stays behind text */
+position: absolute;  /* Absolute positioning to place image behind text */
+top: 0;  /* Align image container to the top */
+left: 0;  /* Align image container to the left */
+width: 100%;  /* Full width of the parent container */
+height: 100%;  /* Full height of the parent container */
+z-index: -1;  /* Make sure the image stays behind text */
 }
 
 .sophies-image {
-  width: 100%;  /* Image takes up the full width */
-  height: 100%;  /* Image takes up the full height */
-  object-fit: cover;  /* Maintain aspect ratio, crop if necessary */
+width: 100%;  /* Image takes up the full width */
+height: 100%;  /* Image takes up the full height */
+object-fit: cover;  /* Maintain aspect ratio, crop if necessary */
 }
 
 .sophies-story::after {
-  content: '';  /* Empty pseudo-element for styling */
-  position: absolute;  /* Position it on top of the image */
-  top: 0;  /* Align to the top */
-  left: 0;  /* Align to the left */
-  width: 100%;  /* Full width */
-  height: 100%;  /* Full height */
-  background: rgba(0, 0, 0, 0.7);  /* Semi-transparent black overlay */
+content: '';  /* Empty pseudo-element for styling */
+position: absolute;  /* Position it on top of the image */
+top: 0;  /* Align to the top */
+left: 0;  /* Align to the left */
+width: 100%;  /* Full width */
+height: 100%;  /* Full height */
+background: rgba(0, 0, 0, 0.7);  /* Semi-transparent black overlay */
 }
 
 .sophies-container {
-  position: relative;  /* Allow text to overlap the image */
-  z-index: 1;  /* Ensure text is above the image */
-  max-width: 70%;  /* Limit width of the text container */
-  text-align: left;  /* Align text to the left */
+position: relative;  /* Allow text to overlap the image */
+z-index: 1;  /* Ensure text is above the image */
+max-width: 70%;  /* Limit width of the text container */
+text-align: left;  /* Align text to the left */
 }
 
 .sophies-story h2 {
-  font-size: 60px;  /* Large heading size */
-  margin-bottom: 15px;  /* Space below the heading */
+font-size: 60px;  /* Large heading size */
+margin-bottom: 15px;  /* Space below the heading */
 }
 
 .sophies-story p {
-  font-size: 18px;  /* Regular paragraph font size */
+font-size: 18px;  /* Regular paragraph font size */
 }
 
 /* Footer Section */
 footer {
-  background-color: black;  /* Setting the background color of the footer to black */
-  color: white;  /* Text color in the footer is set to white for contrast */
-  padding: 20px;  /* Adds some padding around the footer for spacing */
-  display: flex;  /* Using flexbox layout to arrange items inside the footer */
-  justify-content: space-between;  /* Distributes space evenly between left and right items */
-  align-items: center;  /* Vertically aligns items in the center */
-  flex-wrap: wrap;  /* Allows the footer content to wrap to the next line if needed */
+background-color: black;  /* Setting the background color of the footer to black */
+color: white;  /* Text color in the footer is set to white for contrast */
+padding: 20px;  /* Adds some padding around the footer for spacing */
+display: flex;  /* Using flexbox layout to arrange items inside the footer */
+justify-content: space-between;  /* Distributes space evenly between left and right items */
+align-items: center;  /* Vertically aligns items in the center */
+flex-wrap: wrap;  /* Allows the footer content to wrap to the next line if needed */
 }
 
 .footer-left, .footer-right {
-  display: flex;  /* Both left and right sections will use flexbox to align their children */
-  align-items: center;  /* Ensures content inside these sections is aligned vertically in the center */
+display: flex;  /* Both left and right sections will use flexbox to align their children */
+align-items: center;  /* Ensures content inside these sections is aligned vertically in the center */
 }
 
 .footer-left h2, .footer-right h2 {
-  font-size: 15px;  /* Setting a small font size for headings inside the left and right sections */
-  margin: 0 10px;  /* Adds margin on the left and right of the headings to space them out a little */
+font-size: 15px;  /* Setting a small font size for headings inside the left and right sections */
+margin: 0 10px;  /* Adds margin on the left and right of the headings to space them out a little */
 }
 
 .footer-center {
-  text-align: center;  /* Centers the text in the middle section of the footer */
-  flex-grow: 1;  /* Allows the center section to take up the remaining space between the left and right sections */
+text-align: center;  /* Centers the text in the middle section of the footer */
+flex-grow: 1;  /* Allows the center section to take up the remaining space between the left and right sections */
 }
 
 .footer-center ul {
-  list-style: none;  /* Removes the default list styling */
-  padding: 0;  /* Removes padding from the list */
-  margin: 0;  /* Removes margin from the list */
+list-style: none;  /* Removes the default list styling */
+padding: 0;  /* Removes padding from the list */
+margin: 0;  /* Removes margin from the list */
 }
 
 .footer-center ul li {
-  display: inline;  /* Makes the list items appear in a line */
+display: inline;  /* Makes the list items appear in a line */
 }
 
 .footer-center ul li a {
-  text-decoration: none;  /* Removes the underline from the links */
-  color: white;  /* Makes the link text white so it's readable against the black background */
-  font-size: 18px;  /* Sets the font size for the links */
-  font-weight: bold;  /* Makes the link text bold for emphasis */
+text-decoration: none;  /* Removes the underline from the links */
+color: white;  /* Makes the link text white so it's readable against the black background */
+font-size: 18px;  /* Sets the font size for the links */
+font-weight: bold;  /* Makes the link text bold for emphasis */
 }
+
 
 
 
