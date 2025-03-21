@@ -302,85 +302,74 @@ footer {
     padding: 10px 25px;
   }
 
-  @media screen and (max-width: 768px) {
-
-    .mission,
-    .impact {
-      flex-direction: column;
-      padding: 20px;
-    }
-
-    .mission-image,
-    .impact-image,
-    .mission-container,
-    .impact-container {
-      max-width: 100%;
-      padding-right: 0;
-    }
-
-    .mission h2,
-    .impact h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .mission p,
-    .impact p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
+  .mission,
+  .impact {
+    flex-direction: column;
+    padding: 20px;
   }
 
-  @media screen and (max-width: 480px) {
-
-    .mission h2,
-    .impact h2 {
-      font-size: 24px;
-    }
-
-    .mission p,
-    .impact p {
-      font-size: 14px;
-    }
+  .mission-image,
+  .impact-image,
+  .mission-container,
+  .impact-container {
+    max-width: 100%;
+    padding-right: 0;
   }
 
-  /* Mobile responsiveness */
-  @media screen and (max-width: 768px) {
-    .sophies-story {
-      padding: 60px 20px;
-      height: auto;
-      text-align: center;
-    }
-
-    .sophies-container {
-      max-width: 90%;
-    }
-
-    .sophies-story h2 {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-
-    .sophies-story p {
-      font-size: 16px;
-      margin-top: 10px;
-    }
+  .mission h2,
+  .impact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
   }
 
-  @media screen and (max-width: 480px) {
-    .sophies-story {
-      padding: 40px 15px;
-      height: auto;
-    }
+  .mission p,
+  .impact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 
-    .sophies-story h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
+  .mission h2,
+  .impact h2 {
+    font-size: 24px;
+  }
 
-    .sophies-story p {
-      font-size: 14px;
-    }
+  .mission p,
+  .impact p {
+    font-size: 14px;
+  }
+
+  .sophies-story {
+    padding: 60px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .sophies-container {
+    max-width: 90%;
+  }
+
+  .sophies-story h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .sophies-story p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .sophies-story {
+    padding: 40px 15px;
+    height: auto;
+  }
+
+  .sophies-story h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .sophies-story p {
+    font-size: 14px;
   }
 
   footer {

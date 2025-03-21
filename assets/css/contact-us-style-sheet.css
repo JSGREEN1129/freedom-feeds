@@ -237,7 +237,7 @@ input:focus-within {
 }
 
 /* Footer Section - /* Footer Section - I simple yet effective Footer  including relevant icons and navigation links (Aligning with the header for consistancy */
-*/ footer {
+footer {
     background-color: #000000;
     color: #FFFFFF;
     padding: 20px;
@@ -381,11 +381,14 @@ input:focus-within {
     input,
     textarea {
         width: 90%;
-        margin-left: 5%;
+        margin-left: 1%;
+        font-size: 12px;
+        padding: 4px;
     }
 
     footer {
-        padding: 15px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer-left,
