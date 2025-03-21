@@ -51,7 +51,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
     position: relative;
@@ -65,7 +65,7 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: #B22222;
     transition: width 0.3s ease;
 }
 
@@ -83,7 +83,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     position: relative;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     border-bottom: 4px solid #B22222;
 }
@@ -121,18 +121,18 @@ nav ul li a:hover::after {
 
 .cta-button {
     background-color: #B22222;
-    color: white;
+    color: #FFFFFF;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 30px;
-    border: 2px solid white;
+    border: 2px solid #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: white;
+    background-color: #FFFFFF;
     border-color: #B22222;
     color: #B22222;
 }
@@ -180,7 +180,7 @@ nav ul li a:hover::after {
 }
 
 input {
-    background-color: white;
+    background-color: #FFFFFF;
     width: 70%;
     margin-left: 12%;
     font-size: 20px;
@@ -191,7 +191,7 @@ input {
 }
 
 textarea {
-    background-color: white;
+    background-color: #FFFFFF;
     width: 70%;
     margin-left: 12%;
     font-size: 20px;
@@ -218,18 +218,18 @@ input:focus-within {
     display: block;
     margin: 20px auto 0;
     background-color: #B22222;
-    color: white;
+    color: #FFFFFF;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 30px;
-    border: 2px solid white;
+    border: 2px solid #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 #contact-us-submit-button:hover {
-    background-color: white;
+    background-color: #FFFFFF;
     border-color: #B22222;
     color: #B22222;
 }
