@@ -7,7 +7,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Header Section */
+/* Header Section - I simple yet effective header including relevant icons and navigation links */
 header {
     background-color: #000000;
     color: #FFFFFF;
@@ -31,7 +31,7 @@ header {
     margin-left: 15px;
 }
 
-/* Navigation Styles */
+/* Navigation Styles - Navigation styles to look modern and user friendly */
 nav {
     display: flex;
     justify-content: center;
@@ -74,9 +74,10 @@ nav ul li a:hover::after {
 }
 
 
-/* Contact Us Hero Section */
+/* Contact Us Hero Section - A hero banner including a background image and a semi-transparent black overlay for good contrast and pleasing aesthetics  */
 .contact-us-hero {
     background: url("../images/freedom-feeds-contact-us-page-hero-image.jpg") no-repeat center center;
+    /* I used AI to help me with this as I stuggled to apply the overlay correctly */
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -119,6 +120,7 @@ nav ul li a:hover::after {
     margin-bottom: 75px;
 }
 
+/* CTA button to direct user to the donation page on click */
 .cta-button {
     background-color: #B22222;
     color: #FFFFFF;
@@ -137,7 +139,7 @@ nav ul li a:hover::after {
     color: #B22222;
 }
 
-/* Contact Details Section */
+/* Contact Details Section - Simple yet effective contact details page, including a web contact form */
 .contact-us-details {
     padding: 20px 20px;
     text-align: center;
@@ -234,8 +236,8 @@ input:focus-within {
     color: #B22222;
 }
 
-/* Footer Section */
-footer {
+/* Footer Section - /* Footer Section - I simple yet effective Footer  including relevant icons and navigation links (Aligning with the header for consistancy */
+*/ footer {
     background-color: #000000;
     color: #FFFFFF;
     padding: 20px;
@@ -278,4 +280,122 @@ footer {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .poppy-icon {
+        display: none;
+    }
+
+    .contact-us-hero h1 {
+        font-size: 40px;
+    }
+
+    .contact-us-hero #p1 {
+        font-size: 24px;
+    }
+
+    .contact-us-hero #p2 {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .contact-us-details-content h2 {
+        font-size: 36px;
+    }
+
+    .contact-us-details-content p {
+        font-size: 24px;
+    }
+
+    .contact-us-contact-form h1 {
+        font-size: 36px;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        margin-left: 1%;
+        font-size: 16px;
+        padding: 4px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .footer-center ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us-hero h1 {
+        font-size: 30px;
+    }
+
+    .contact-us-hero #p1 {
+        font-size: 18px;
+    }
+
+    .contact-us-hero #p2 {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .contact-us-details-content h2 {
+        font-size: 30px;
+    }
+
+    .contact-us-details-content p {
+        font-size: 20px;
+    }
+
+    .contact-us-contact-form h1 {
+        font-size: 30px;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .footer-center ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }

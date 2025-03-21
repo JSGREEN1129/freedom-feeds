@@ -76,6 +76,7 @@ nav ul li a:hover::after {
 
 .donation-hero {
     background: url("../images/freedom-feeds-donate-page-hero-image-background.jpg") no-repeat center center;
+    /* I used AI to help me with this as I stuggled to apply the overlay correctly */
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -136,7 +137,7 @@ nav ul li a:hover::after {
     color: #B22222;
 }
 
-/* Donation-Mission Section - Image Left, Text Right */
+/* Donation-Mission Section - Overview of how and what users can donate*/
 .donation-mission {
     display: flex;
     align-items: center;
@@ -181,7 +182,7 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
 }
 
-/* donation-salvation-army - Image Left, Text Right */
+/* donation-salvation-army - A section to an external partners website when clicking the logo */
 .donation-salvation-army {
     display: flex;
     align-items: center;
@@ -209,9 +210,7 @@ nav ul li a:hover::after {
 
 .donation-salvation-army-image a {
     display: block;
-    /* Ensure the anchor tag takes up the full space of the image */
     text-decoration: none;
-    /* Remove underline from the link */
 }
 
 .donation-salvation-army-container {
@@ -234,7 +233,7 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
 }
 
-/* Footer Section */
+/* Footer Section - /* Footer Section - I simple yet effective Footer  including relevant icons and navigation links (Aligning with the header for consistancy */
 footer {
     background-color: #000000;
     color: #FFFFFF;
@@ -257,7 +256,6 @@ footer {
     margin: 0 10px;
 }
 
-/* Footer Navigation Styles */
 .footer-center {
     text-align: center;
     flex-grow: 1;
@@ -269,12 +267,10 @@ footer {
     margin: 0;
     display: flex;
     justify-content: center;
-    /* Centers the links horizontally */
 }
 
 .footer-center ul li {
     margin-right: 20px;
-    /* Space between links */
 }
 
 .footer-center ul li a {
@@ -299,29 +295,84 @@ footer {
 
 .footer-center ul li a:hover::after {
     width: 100%;
-    /* Underline animation on hover */
 }
 
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .get-in-touch-hero h2 {
+    .poppy-icon {
+        display: none;
+    }
+
+    .donation-hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .donation-hero h1 {
         font-size: 40px;
     }
 
-    .get-in-touch-hero p {
-        font-size: 22px;
+    .donation-hero #p1 {
+        font-size: 24px;
     }
 
-    .get-in-touch-hero-content {
-        max-width: 90%;
-    }
-
-    .get-in-touch-details h2 {
-        font-size: 35px;
-    }
-
-    .get-in-touch-details p {
+    .donation-hero #p2 {
         font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .donation-mission,
+    .donation-salvation-army {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .donation-mission-image,
+    .donation-salvation-army-image {
+        max-width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .donation-mission-container,
+    .donation-salvation-army-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .donation-mission h2,
+    .donation-salvation-army h2 {
+        font-size: 32px;
+    }
+
+    .donation-mission p,
+    .donation-salvation-army p {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .footer-center ul li {
+        display: block;
+        margin: 5px 0;
     }
 }

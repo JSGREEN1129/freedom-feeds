@@ -76,6 +76,7 @@ nav ul li a:hover::after {
 /* Hero Section */
 .hero {
   background: url("../images/freedom-feeds-homepage-hero-image-background.jpg") no-repeat center center;
+  /* I used AI to help me with this as I stuggled to apply the overlay correctly */
   background-size: cover;
   height: 80vh;
   display: flex;
@@ -193,6 +194,7 @@ nav ul li a:hover::after {
   justify-content: center;
   padding: 100px 20px;
   background: url("../images/freedom-feeds-homepage-sophies-story-image-sophie.jpg") no-repeat center center;
+  /* I used AI to help me with this as I stuggled to apply the overlay correctly */
   background-size: cover;
   color: #FFFFFF;
   text-align: center;
@@ -272,24 +274,128 @@ footer {
   font-weight: bold;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-  .impact,
+  .poppy-icon {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero #p1 {
+    font-size: 24px;
+  }
+
+  .hero #p2 {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .mission,
+    .impact {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .mission-image,
+    .impact-image,
+    .mission-container,
+    .impact-container {
+      max-width: 100%;
+      padding-right: 0;
+    }
+
+    .mission h2,
+    .impact h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .mission p,
+    .impact p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .mission h2,
+    .impact h2 {
+      font-size: 24px;
+    }
+
+    .mission p,
+    .impact p {
+      font-size: 14px;
+    }
+  }
+
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    .sophies-story {
+      padding: 60px 20px;
+      height: auto;
+      text-align: center;
+    }
+
+    .sophies-container {
+      max-width: 90%;
+    }
+
+    .sophies-story h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .sophies-story p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .sophies-story {
+      padding: 40px 15px;
+      height: auto;
+    }
+
+    .sophies-story h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .sophies-story p {
+      font-size: 14px;
+    }
+  }
+
   footer {
     flex-direction: column;
     text-align: center;
   }
 
-  .impact-text,
-  .impact-image,
   .footer-left,
   .footer-right {
-    max-width: 100%;
-    padding: 20px 0;
+    flex-direction: column;
+    margin-bottom: 10px;
   }
 
-  .footer-center {
-    order: -1;
+  .footer-center ul li {
+    display: block;
+    margin: 5px 0;
   }
 }
