@@ -293,6 +293,11 @@ footer {
         display: none;
     }
 
+    .contact-us-hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
     .contact-us-hero h1 {
         font-size: 40px;
     }
@@ -350,15 +355,15 @@ footer {
 
 @media (max-width: 480px) {
     .contact-us-hero h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .contact-us-hero #p1 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .contact-us-hero #p2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .cta-button {
