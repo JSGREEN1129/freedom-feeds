@@ -283,7 +283,7 @@ footer {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         flex-direction: column;
         text-align: center;
@@ -315,16 +315,13 @@ footer {
         padding: 10px 25px;
     }
 
-    .contact-us-details-content h2 {
-        font-size: 36px;
+    .contact-us-details-content h2,
+    .contact-us-contact-form h2 {
+        font-size: 28px;
     }
 
     .contact-us-details-content p {
-        font-size: 24px;
-    }
-
-    .contact-us-contact-form h1 {
-        font-size: 36px;
+        font-size: 16px;
     }
 
     input,
