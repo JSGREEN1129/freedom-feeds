@@ -82,7 +82,7 @@ nav ul li a:hover::after {
 
 
 .donation-hero {
-    background: url("../images/freedom-feeds-donate-page-hero-image-background.jpg") no-repeat center center;
+    background: url("../images/freedom-feeds-donate-page-hero-image-background.webp") no-repeat center center;
     /* I used AI to help me with this as I stuggled to apply the overlay correctly */
     background-size: cover;
     height: 80vh;

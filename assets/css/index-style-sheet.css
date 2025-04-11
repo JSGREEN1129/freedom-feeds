@@ -82,7 +82,7 @@ nav ul li a:hover::after {
 
 /* Hero Section */
 .hero {
-  background: url("../images/freedom-feeds-homepage-hero-image-background.jpg") no-repeat center center;
+  background: url("../images/freedom-feeds-homepage-hero-image-background.webp") no-repeat center center;
   /* I used AI to help me with this as I stuggled to apply the overlay correctly */
   background-size: cover;
   height: 80vh;
@@ -200,7 +200,7 @@ nav ul li a:hover::after {
   align-items: center;
   justify-content: center;
   padding: 100px 20px;
-  background: url("../images/freedom-feeds-homepage-sophies-story-image-sophie.jpg") no-repeat center center;
+  background: url("../images/freedom-feeds-homepage-sophies-story-image-sophie.webp") no-repeat center center;
   /* I used AI to help me with this as I stuggled to apply the overlay correctly */
   background-size: cover;
   color: #FFFFFF;
