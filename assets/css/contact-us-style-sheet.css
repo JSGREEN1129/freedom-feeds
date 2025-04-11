@@ -174,6 +174,18 @@ nav ul li a:hover::after {
     color: #000000;
 }
 
+#contact-number {
+    text-decoration: none;
+    color: inherit;
+}
+
+#email-address {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
 
 /* Contact Us Contact Form */
 .contact-us-contact-form {
