@@ -73,6 +73,13 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+.active {
+    border-bottom: 3px solid #B22222;
+    height: 3px;
+    padding-bottom: 13px;
+    pointer-events: none;
+}
+
 
 .donation-hero {
     background: url("../images/freedom-feeds-donate-page-hero-image-background.jpg") no-repeat center center;

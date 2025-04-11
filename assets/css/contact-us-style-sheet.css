@@ -73,6 +73,13 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+.active {
+    border-bottom: 3px solid #B22222;
+    height: 3px;
+    padding-bottom: 13px;
+    pointer-events: none;
+}
+
 
 /* Contact Us Hero Section - A hero banner including a background image and a semi-transparent black overlay for good contrast and pleasing aesthetics  */
 .contact-us-hero {
@@ -166,6 +173,7 @@ nav ul li a:hover::after {
     margin: 0 0 10px 0;
     color: #000000;
 }
+
 
 /* Contact Us Contact Form */
 .contact-us-contact-form {
